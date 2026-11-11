@@ -2019,3 +2019,11 @@ html body .cps-c .cps-h{background:var(--cc);border-bottom:0!important}
  html body .cpk .cps-c:not(:first-child) .cps-h{box-shadow:-1px 0 0 rgba(23,37,29,.06)!important}
 }
 @media(min-width:861px) and (min-height:640px){html body .cpk .cps-h h3{font-size:clamp(17px,1.45vw,21px)!important}html body .cpk .cps-h{padding:0 16px!important}html body .cpk .cps-h[data-n]::before{margin-right:10px}}
+/* v146 · benefits: row starts half-way, live progress status */
+@media(min-width:861px){html body #benefits.lb.hs .lb-row{padding-left:max(0px,calc(50% - 40px))!important;padding-right:0}}
+html body #benefits .lb-st{display:flex;align-items:center;gap:16px;margin-top:24px;color:rgba(255,255,255,.85);font:500 14px/1 var(--f-sans)}
+html body #benefits .lb-n b{color:#fff;font-weight:700}
+html body #benefits .lb-prog{display:block!important;flex:0 0 220px;margin:0!important;height:3px;background:rgba(255,255,255,.25)}
+html body #benefits .lb-prog i{transition:width .15s linear}
+html body #benefits .lb-tip{margin-left:auto;opacity:.75;font-size:13px}
+@media(max-width:860px){html body #benefits .lb-prog{flex:1}html body #benefits .lb-tip{display:none}}
